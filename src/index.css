@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(to right , #00AAFF , #00FF6c) ;
+  margin: 0;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.father{
+  display: grid;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4 , 6rem);
+  grid-template-rows: minmax( 7rem , auto) repeat(5 , 6rem);
+}
+.span-two{
+  grid-column: span 2;
+
+}
+.output{
+  grid-column: 1 /-1;
+  background-color: rgba(0, 0, 0, .75);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: .75rem;
+
+}
+
+.prev-operand{
+  color: azure;
+  font-size: 1rem;
+}
+.current-operand{
+  font-size: 2rem;
+}
+button{
+  background-color: rgb(165, 228, 245);
+  border: 1px solid rgb(193, 239, 242);
+  transition: 0.2s;
+}
+button:hover{
+  background-color: rgb(225, 246, 252);
+}
